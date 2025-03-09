@@ -1,50 +1,57 @@
-# Welcome to your Expo app 👋
+# Priorities
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A minimalist todo app that helps you focus on what truly matters.
 
-## Get started
+## Overview
 
-1. Install dependencies
+Priorities is a simple, focused todo app that enforces a maximum of 5 tasks. Unlike traditional todo apps that encourage endless lists, Priorities helps you identify and focus on your most important tasks.
 
+## Features
+
+- **Minimalist Design**: Clean, distraction-free interface
+- **Focus on What Matters**: Maximum of 5 todos at any time
+- **Simple Interactions**: Add and complete tasks with minimal friction
+- **Persistence**: Your priorities are saved automatically
+- **Animations**: Smooth transitions and feedback
+
+## Technical Details
+
+- Built with Expo and React Native
+- Written in TypeScript for type safety
+- Styled with TailwindCSS (via NativeWind)
+- Local storage with AsyncStorage
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies:
    ```bash
    npm install
    ```
-
-2. Start the app
-
+3. Start the development server:
    ```bash
-    npx expo start
+   npm start
    ```
+4. Open the app in Expo Go on your device or simulator
 
-In the output, you'll find options to open the app in a
+## Project Structure
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- `/app`: Main application screens
+- `/components`: Reusable UI components
+- `/types`: TypeScript interfaces
+- `/hooks`: Custom React hooks (if needed)
+- `/constants`: App constants and configuration
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Implementation Details
 
-## Get a fresh project
+The app follows a simple architecture:
 
-When you're ready, run:
+- **Data Model**: Todo items with id, text, completion status, and creation timestamp
+- **Components**: Modular components for todo items, list, and input
+- **State Management**: React's useState for local state
+- **Storage**: AsyncStorage for persistence
+- **Styling**: TailwindCSS via NativeWind
 
-```bash
-npm run reset-project
-```
+## License
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+MIT
